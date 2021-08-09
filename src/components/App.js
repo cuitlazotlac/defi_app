@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import Navbar from "./Navbar";
-import "./App.css";
-import Main from "./Main";
-
 import Web3 from "web3";
-
 import DaiToken from "../abis/DaiToken.json";
 import DappToken from "../abis/DappToken.json";
 import TokenFarm from "../abis/TokenFarm.json";
+import Navbar from "./Navbar";
+import Main from "./Main";
+import "./App.css";
 
 class App extends Component {
   async componentWillMount() {
@@ -158,12 +156,12 @@ class App extends Component {
             >
               <div className="content mr-auto ml-auto">
                 <a
-                  href="http://www.dappuniversity.com/bootcamp"
+                  href="https://github.com/cuitlazotlac/defi_app"
                   target="_blank"
                   rel="noopener noreferrer"
                 ></a>
 
-                <Main />
+                {content}
               </div>
             </main>
           </div>

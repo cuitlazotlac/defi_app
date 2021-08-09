@@ -16,12 +16,15 @@ class Main extends Component {
           <tbody>
             <tr>
               <td>
-                {window.web3.utils.fromWei(this.props.stakingBalance, "Ether")}{" "}
+                {window.web3.utils.fromWei(
+                  this.props.stakingBalance.toString(),
+                  "Ether"
+                )}{" "}
                 mDAI
               </td>
               <td>
                 {window.web3.utils.fromWei(
-                  this.props.dappTokenBalance,
+                  this.props.dappTokenBalance.toString(),
                   "Ether"
                 )}{" "}
                 DAPP
@@ -48,7 +51,7 @@ class Main extends Component {
                 <span className="float-right text-muted">
                   Balance:{" "}
                   {window.web3.utils.fromWei(
-                    this.props.daiTokenBalance,
+                    this.props.daiTokenBalance.toString(),
                     "Ether"
                   )}
                 </span>
